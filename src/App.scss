@@ -1,0 +1,15 @@
+:root {
+  $header-height: 3.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: rgb(243, 242, 239);
+}

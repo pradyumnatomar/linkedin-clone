@@ -1,0 +1,10 @@
+.home {
+  background-color: rgb(243, 242, 239);
+  min-height: 100vh;
+
+  &::before {
+    content: "";
+    display: block;
+    padding: 60px;
+  }
+}
