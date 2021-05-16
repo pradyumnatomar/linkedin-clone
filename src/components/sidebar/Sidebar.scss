@@ -1,0 +1,29 @@
+$header-height: 3.2rem;
+
+.sidebar-page {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 300vh;
+  height: 100vh;
+
+  .sidebar {
+    position: fixed;
+    background-color: white;
+    right: -100%;
+    top: $header-height;
+    height: calc(100vh - #{$header-height});
+    width: 256px;
+    z-index: 199;
+    border-radius: 8px 0 0 8px;
+    transition-duration: 400ms;
+
+    &.open {
+      right: 0;
+    }
+  }
+}

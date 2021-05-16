@@ -4,6 +4,7 @@ import Card from "../../components/card/Card";
 import NewsCard from "../../components/news-card/NewsCard";
 import ProfileCard from "../../components/profile-card/ProfileCard";
 import Feed from "../../components/feed/Feed";
+import Message from "../../components/message/Message";
 
 const Home = () => {
   const [cardFixed, setCardFixed] = useState(false);
@@ -30,6 +31,7 @@ const Home = () => {
         <Feed />
         <NewsCard />
       </div>
+      <Message />
     </main>
   );
 };

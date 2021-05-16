@@ -7,7 +7,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {navItems.map((item, index) => (
-        <Navitem key={index} title={item.title} icon={item.icon} />
+        <Navitem
+          key={index}
+          title={item.title}
+          icon={item.icon}
+          index={index + 1}
+          totalNavItems={navItems.length}
+        />
       ))}
     </nav>
   );
