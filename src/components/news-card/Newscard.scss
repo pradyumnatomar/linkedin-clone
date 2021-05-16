@@ -1,6 +1,5 @@
-.card {
-  margin-top: 2rem;
-  width: 212px;
+.news-card {
+  width: 256px;
   height: 320px;
   background-color: white;
   border-radius: 8px;
@@ -9,13 +8,4 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 1rem;
-
-  &.card-fixed {
-    position: fixed;
-    top: 10%;
-  }
-
-  .discover {
-    align-self: center;
-  }
 }

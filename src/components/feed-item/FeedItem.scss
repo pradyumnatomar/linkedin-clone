@@ -1,0 +1,83 @@
+$line-height: 1rem;
+$number-of-lines: calc(3 * 1rem); // 3 lines * line-height text truncate
+
+.feed-item {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid grey;
+  background-color: white;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+
+  .connection-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 225, 225);
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .feed-item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .feed-item-header-left {
+      display: flex;
+
+      .feed-item-logo {
+        height: 46px;
+        width: 46px;
+        margin-right: 0.8rem;
+
+        .feed-profile-pic {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .feed-item-details {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .feed-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    // &::before {
+    //   position: absolute;
+    //   display: block;
+    //   width: 60%;
+    //   content: "... show more";
+    //   bottom: 0;
+    //   right: 0;
+    //   background-color: white;
+    // }
+
+    // &::after {
+    //   content: "";
+    //   display: inline;
+    //   position: absolute;
+    //   right: 0;
+    //   width: 1rem;
+    //   height: 1rem;
+    //   //   background: white;
+    // }
+  }
+
+  .feed-image-holder {
+    max-width: 100%;
+
+    .feed-image {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}

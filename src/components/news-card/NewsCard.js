@@ -1,9 +1,9 @@
 import React from "react";
-import "./Card.scss";
+import "./Newscard.scss";
 
-const Card = ({ isFixed }) => {
+const NewsCard = ({}) => {
   return (
-    <div className={`card ${isFixed && `card-fixed`}`}>
+    <div className={`news-card`}>
       <span>Recent</span>
       <span>
         <strong>#</strong> reactjs
@@ -26,4 +26,4 @@ const Card = ({ isFixed }) => {
   );
 };
 
-export default Card;
+export default NewsCard;

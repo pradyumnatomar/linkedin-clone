@@ -1,0 +1,57 @@
+.recommendation-item {
+  margin-top: 0.6rem;
+  width: 40%;
+  height: 90%;
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding-bottom: 0.4rem;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  .company-background-holder {
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+    .recommendation-background {
+      width: 100%;
+      height: 40%;
+      position: absolute;
+      top: 0;
+      border-radius: 8px;
+
+      .recommendation-image {
+        height: 100%;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;
+      }
+    }
+
+    .company-image-holder {
+      height: 58px;
+      width: 58px;
+      margin-top: 30px;
+      position: absolute;
+      //   top: 2%;
+      left: 8%;
+
+      .company-image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .company-details {
+    padding-bottom: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+
+    span:last-child {
+      margin-top: 10px;
+      border-top: 1px solid rgb(197, 196, 196);
+    }
+  }
+}
