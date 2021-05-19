@@ -2,3 +2,9 @@
   width: 40%;
   background-color: transparent;
 }
+
+@media (max-width: 750px) {
+  .feed {
+    width: 80%;
+  }
+}

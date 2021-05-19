@@ -9,3 +9,9 @@
   justify-content: space-evenly;
   padding-left: 1rem;
 }
+
+@media (max-width: 750px) {
+  .news-card {
+    display: none;
+  }
+}

@@ -11,11 +11,14 @@ const Home = () => {
   useEffect(() => {
     function handleFixedCard() {
       let currentScrollPosition = 200;
+      /**  if the current scroll position goes past 200px then fix the card */
       if (window.scrollY > currentScrollPosition) {
         setCardFixed(true);
       } else {
+        /**if the current scroll position is past the current scroll position set below */
         setCardFixed(false);
       }
+      /** then set the the current scroll value on it to be able to reference it */
       currentScrollPosition = window.scrollY;
     }
     window.addEventListener("scroll", handleFixedCard);
